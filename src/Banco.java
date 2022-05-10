@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Banco {
 
 	private String nome;
-	private List<Conta> contas;
+	private List<Conta> contas = new ArrayList<>();
 
 	public String getNome() {
 		return nome;
@@ -17,8 +18,8 @@ public class Banco {
 		return contas;
 	}
 
-	public void setContas(List<Conta> contas) {
-		this.contas = contas;
+	public void addContas(Conta conta) {
+		this.contas.add(conta);
 	}
 
 }
